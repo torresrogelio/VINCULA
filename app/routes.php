@@ -32,3 +32,5 @@ Route::resource('company_types', 'Company_typesController');
 Route::resource('work_offers', 'Work_offersController');
 
 Route::resource('work_offer_students', 'Work_offer_studentsController');
+
+Route::resource('survey_managers', 'Survey_managersController');
