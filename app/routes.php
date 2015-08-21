@@ -28,3 +28,17 @@ Route::resource('companies', 'CompaniesController');
 Route::resource('agreements', 'AgreementsController');
 
 Route::resource('company_types', 'Company_typesController');
+
+Route::resource('exchanges', 'ExchangesController');
+
+Route::resource('agreement_types', 'Agreement_typesController');
+
+Route::resource('agreement_incomes', 'Agreement_incomesController');
+
+Route::resource('agreement_seats', 'Agreement_seatsController');
+
+Route::resource('agreement_seat_students', 'Agreement_seat_studentsController');
+
+Route::resource('exchange_subjects', 'Exchange_subjectsController');
+
+Route::resource('survey_students', 'Survey_studentsController');
