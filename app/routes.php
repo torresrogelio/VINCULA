@@ -15,3 +15,10 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+Route::resource('teachers', 'TeachersController');
+
+Route::resource('students', 'StudentsController');
+
+Route::resource('students', 'StudentsController');
