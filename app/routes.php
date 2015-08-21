@@ -28,3 +28,5 @@ Route::resource('companies', 'CompaniesController');
 Route::resource('agreements', 'AgreementsController');
 
 Route::resource('company_types', 'Company_typesController');
+
+Route::resource('work_offers', 'Work_offersController');
