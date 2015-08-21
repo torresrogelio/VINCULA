@@ -55,8 +55,8 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'vincula',
-			'username'  => 'vincula_app',
+			'database'  => 'vincula_db',
+			'username'  => 'vincula',
 			'password'  => 'chepo',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
