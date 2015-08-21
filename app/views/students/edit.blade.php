@@ -42,14 +42,14 @@
         <div class="form-group">
             {{ Form::label('start_period', 'Start_period:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-                {{ Form::input('date','start_period', substr(Input::old('start_period'), 10), array('class'=>'form-control', 'placeholder'=>'Start Period')) }}
+                {{ Form::input('date','start_period', substr($student->start_period, 0, 10), array('class'=>'form-control', 'placeholder'=>'Start Period')) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('graduation_period', 'Graduation_period:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('graduation_period', Input::old('graduation_period'), array('class'=>'form-control', 'placeholder'=>'Graduation_period')) }}
+                {{ Form::input('date','graduation_period', substr($student->graduation_period, 0, 10), array('class'=>'form-control', 'placeholder'=>'Graduation Period')) }}
             </div>
         </div>
 
