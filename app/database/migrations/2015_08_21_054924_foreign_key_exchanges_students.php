@@ -29,7 +29,7 @@ class ForeignKeyExchangesStudents extends Migration {
 	{
 		Schema::table('exchanges', function(Blueprint $table)
 		{
-			$table->dropForeign('student_id');
+			$table->dropForeign(['student_id']);
 		});
 	}
 

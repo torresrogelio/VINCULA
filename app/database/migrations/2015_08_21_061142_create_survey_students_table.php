@@ -15,7 +15,7 @@ class CreateSurveyStudentsTable extends Migration {
 		Schema::create('survey_students', function(Blueprint $table) {
 			$table->increments('id');
 			$table->integer('student_id')->unsigned();
-			$table->string('survey');
+			$table->text('survey');
 			$table->timestamps();
 		});
 	}
