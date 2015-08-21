@@ -26,3 +26,5 @@ Route::resource('students', 'StudentsController');
 Route::resource('companies', 'CompaniesController');
 
 Route::resource('agreements', 'AgreementsController');
+
+Route::resource('company_types', 'Company_typesController');
