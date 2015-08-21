@@ -48,3 +48,6 @@ Route::resource('work_offers', 'Work_offersController');
 Route::resource('work_offer_students', 'Work_offer_studentsController');
 
 Route::resource('survey_managers', 'Survey_managersController');
+
+
+Route::resource('current_graduate_student_jobs', 'Current_graduate_student_jobsController');
