@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('Agreement_seat_studentsTableSeeder');
 		$this->call('Exchange_subjectsTableSeeder');
 		$this->call('Survey_studentsTableSeeder');
+		$this->call('Work_offersTableSeeder');
+		$this->call('Work_offer_studentsTableSeeder');
 	}
 
 }

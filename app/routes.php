@@ -42,3 +42,7 @@ Route::resource('agreement_seat_students', 'Agreement_seat_studentsController');
 Route::resource('exchange_subjects', 'Exchange_subjectsController');
 
 Route::resource('survey_students', 'Survey_studentsController');
+
+Route::resource('work_offers', 'Work_offersController');
+
+Route::resource('work_offer_students', 'Work_offer_studentsController');

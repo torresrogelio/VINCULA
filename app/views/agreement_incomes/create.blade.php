@@ -1,0 +1,54 @@
+@extends('layouts.scaffold')
+
+@section('main')
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-2">
+        <h1>Create Agreement_income</h1>
+
+        @if ($errors->any())
+        	<div class="alert alert-danger">
+        	    <ul>
+                    {{ implode('', $errors->all('<li class="error">:message</li>')) }}
+                </ul>
+        	</div>
+        @endif
+    </div>
+</div>
+
+{{ Form::open(array('route' => 'agreement_incomes.store', 'class' => 'form-horizontal')) }}
+
+        <div class="form-group">
+            {{ Form::label('amount', 'Amount:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::text('amount', Input::old('amount'), array('class'=>'form-control', 'placeholder'=>'Amount')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('teacher_id', 'Teacher_id:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::input('number', 'teacher_id', Input::old('teacher_id'), array('class'=>'form-control')) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('agreement_id', 'Agreement_id:', array('class'=>'col-md-2 control-label')) }}
+            <div class="col-sm-10">
+              {{ Form::input('number', 'agreement_id', Input::old('agreement_id'), array('class'=>'form-control')) }}
+            </div>
+        </div>
+
+
+<div class="form-group">
+    <label class="col-sm-2 control-label">&nbsp;</label>
+    <div class="col-sm-10">
+      {{ Form::submit('Create', array('class' => 'btn btn-lg btn-primary')) }}
+    </div>
+</div>
+
+{{ Form::close() }}
+
+@stop
+
+
