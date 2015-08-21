@@ -21,7 +21,7 @@
         <div class="form-group">
             {{ Form::label('student_id', 'Student_id:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'student_id', Input::old('student_id'), array('class'=>'form-control')) }}
+              {{ Form::select('student_id', $students, null, array('class'=>'form-control')) }}
             </div>
         </div>
 

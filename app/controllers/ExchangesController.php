@@ -33,7 +33,8 @@ class ExchangesController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('exchanges.create');
+		$students = Student::select(DB::raw('CONCAT(first_name, \' \', last_name, \' - \', number) AS name, id'))->get()->lists('name', 'id');
+		return View::make('exchanges.create')->withStudents($students);
 	}
 
 	/**

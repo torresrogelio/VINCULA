@@ -21,35 +21,35 @@
         <div class="form-group">
             {{ Form::label('first_name', 'First_name:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('first_name', Input::old('first_name'), array('class'=>'form-control', 'placeholder'=>'First_name')) }}
+              {{ Form::text('first_name', Input::old('first_name'), array('class'=>'form-control', 'placeholder'=>'First Name')) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('last_name', 'Last_name:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('last_name', Input::old('last_name'), array('class'=>'form-control', 'placeholder'=>'Last_name')) }}
+              {{ Form::text('last_name', Input::old('last_name'), array('class'=>'form-control', 'placeholder'=>'Last Name')) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('number', 'Number:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::input('number', 'number', Input::old('number'), array('class'=>'form-control')) }}
+              {{ Form::input('number', 'number', Input::old('number'), array('class'=>'form-control', 'placeholder'=>'Credential Number')) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('start_period', 'Start_period:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('start_period', Input::old('start_period'), array('class'=>'form-control', 'placeholder'=>'Start_period')) }}
+              {{ Form::input('date','start_period', null, array('class'=>'form-control', 'placeholder'=>'Start Period')) }}
             </div>
         </div>
 
         <div class="form-group">
             {{ Form::label('graduation_period', 'Graduation_period:', array('class'=>'col-md-2 control-label')) }}
             <div class="col-sm-10">
-              {{ Form::text('graduation_period', Input::old('graduation_period'), array('class'=>'form-control', 'placeholder'=>'Graduation_period')) }}
+              {{ Form::input('date', 'graduation_period', null, array('class'=>'form-control', 'placeholder'=>'Graduation Period')) }}
             </div>
         </div>
 
